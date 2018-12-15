@@ -223,6 +223,7 @@ export default {
       showPrev: false,
       showNext: true,
 
+      owl: null,
       prevHandler: 'carousel_prev_' + this.generateUniqueId(),
       elementHandle: 'carousel_' + this.generateUniqueId(),
       nextHandler: 'carousel_next_' + this.generateUniqueId(),
@@ -315,6 +316,8 @@ export default {
         }
       });
     }
+
+    this.owl = owl;
   },
 
   methods: {
